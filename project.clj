@@ -9,14 +9,17 @@
 
   :test-paths ["spec/clj"]
 
-  :dependencies [[org.clojure/clojure "1.6.0"]
+  :dependencies [[compojure "1.3.1"]
+                 [enlive "1.1.5"]
+                 [environ "1.0.0"]
+                 [om "0.8.0-rc1"]
+                 [org.clojure/clojure "1.6.0"]
                  [org.clojure/clojurescript "0.0-2511" :scope "provided"]
+                 [prismatic/om-tools "0.3.11"]
                  [ring "1.3.2"]
                  [ring/ring-defaults "0.1.3"]
-                 [compojure "1.3.1"]
-                 [enlive "1.1.5"]
-                 [om "0.8.0-rc1"]
-                 [environ "1.0.0"]]
+                 [sablono "0.3.4"]
+                 [secretary "1.2.3"]]
 
   :plugins [[lein-cljsbuild "1.0.3"]
             [lein-environ "1.0.0"]
